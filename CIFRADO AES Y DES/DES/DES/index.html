@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado DES</title>
+    <link rel="stylesheet" href="boost/bootstrap.min%20(2).css">
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/tripledes.js"></script>
+
+<div class="container">
+    <div class="row">
+        <div class="input-group-prepend" style="margin-top: 15%">
+            <center><h1>Cifrado DES</h1></center>
+            <h3>Ingresa una clave de 8 caracteres :)</h3>
+            <input class="form-control" type="file" id="archivodes" oninput="leerdes()">
+            <br>
+            <input class="form-control" type="password" placeholder="Clave" id="clavedes" onkeypress="return letras(event)" maxlength="8" minlength="8">
+            <br>
+            <input class="form-control" type="button" value="Cifrar" onclick="cifraDes()">
+            <br>
+            <input class="form-control" type="button" value="Descifrar" onclick="descifraDes()">
+            <p id="txtDes"></p>
+            <center><p>Alcalá Rangel Jeffrey Alexander     5IV8</p></center>
+
+            <div id="resultado"></div>
+        </div>
+        <script src="JS/cifrado.js"></script>
+        <script src="js/validacion.js"></script>
+    </div>
+</div>
+
+</body>
+</html>
